@@ -10,12 +10,25 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+//            Image(systemName: "globe")
+//                .imageScale(.large)
+//                .foregroundColor(.accentColor)
+//            Text("Hello, world !")
+            NavigationView{
+                List {
+                    Text("Trr")
+                    Text("Trr13")
+                    Text("Trr 3]")
+                    
+                }
+                
+                .navigationBarTitle(Text("Friends"))
+            }
+            
         }
         .padding()
+        
+        
     }
 }
 
