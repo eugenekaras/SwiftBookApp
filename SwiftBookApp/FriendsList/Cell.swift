@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct Cell: View {
+    
+    var user: UserResponse
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 16.0){
+            TopView(user: user)
+            Text(user.text)
+                .lineLimit(nil)
+                
+        }
+        .padding()
     }
 }
 
 struct Cell_Previews: PreviewProvider {
     static var previews: some View {
-        Cell()
+        Cell(user: userResponse[0])
     }
 }

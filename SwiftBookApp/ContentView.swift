@@ -8,25 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    var categories: [String: [ProductsResponse]]{
+        .init(grouping:materialResponse, by: {$0.category.rawValue})
+        
+    }
+    
+    
     var body: some View {
-        VStack {
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundColor(.accentColor)
-//            Text("Hello, world !")
-            NavigationView{
-                List {
-                    Text("Trr")
-                    Text("Trr13")
-                    Text("Trr 3]")
-                    
-                }
-                
-                .navigationBarTitle(Text("Friends"))
+        
+        NavigationView{
+//            List(self.categories.keys.sorted().inde) { key in
+//                Text(key)
             }
+            .navigationBarTitle(Text("Homepage"))
             
         }
-        .padding()
+        
+//        VStack {
+//            NavigationView{
+//                List(userResponse) { user in
+//                    Cell(user: user)
+//
+//
+//                }
+//
+//                .navigationBarTitle(Text("Friends"))
+//            }
+//
+//        }
+//        .padding()
         
         
     }
