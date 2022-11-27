@@ -11,15 +11,14 @@ import Foundation
 import UIKit
 import SwiftUI
 
-let swiftbook = UserResponse(id: 10, name: "SwiftBook", profileImage: "swiftbook", email: "info@swiftbook.ru", likes: "54.4K", text: "Обучение созданию приложений на Swift для всех!\nСамое крупное и дружное сообщество по разработке под IOS :)")
 
-let materialResponse: [ProductsResponse] = load("coursesModelDate.json")
+
+let swiftBook = UserResponse(id: 1001, name: "Swiftbook", profileImage: "swiftbook", email: "info@swiftbook.ru", likes: "54.4K", text: "Обучение созданию приложений на Swift для всех!\nСамое крупное и дружное сообщество по разработке под iOS :)")
+
+let materialResponse: [ProductsResponse] = load("coursesModelData.json")
 let userResponse: [UserResponse] = load("userModelData.json")
 
-
-
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
-//    func load<T: Decodable>(_ filename: String ) -> T {
     let data: Data
     
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)

@@ -20,10 +20,11 @@ struct ProductsResponse: Hashable, Codable, Identifiable {
     var image: String
     var shortName: String
     var category: Category
-    var description:String
+    var description: String
     var rating: Double
     var students: Int
     var lessons: Int
     var isFavorite: Bool
     var isFeatured: Bool
 }
+
