@@ -65,7 +65,7 @@ struct MainImage: View {
             .resizable()
             .cornerRadius(30)
             .frame(width: 170,height: 170)
-            .border(Color.gray, width: 3).cornerRadius(30)
+//            .border(Color.gray, width: 3).cornerRadius(30)
             .shadow(radius: 10)
     }
     
