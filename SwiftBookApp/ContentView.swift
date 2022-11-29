@@ -20,14 +20,14 @@ struct ContentView: View {
         NavigationView {
             
             List {
-//                Cell(user: swiftBook).listRowInsets(EdgeInsets())
+                Cell(user: swiftBook).listRowInsets(EdgeInsets())
                 ForEach(self.categories.keys.sorted(), id: \.self) { key in
 
                     ProductRow(categoryName: key, items: self.categories[key]!)
                     
                 }
                 
-            }
+            }.listRowInsets(EdgeInsets())
                 .navigationBarTitle(Text("Homepage"))
         }
     }
