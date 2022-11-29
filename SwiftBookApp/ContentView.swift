@@ -23,7 +23,12 @@ struct ContentView: View {
                 Cell(user: swiftBook).listRowInsets(EdgeInsets())
                 ForEach(self.categories.keys.sorted(), id: \.self) { key in
 
-                    ProductRow(categoryName: key, items: self.categories[key]!)
+
+//                    if key == "Courses" {
+                        ProductRow(categoryName: key, items: self.categories[key]!)
+//                    } else if key == "Webinars" {
+//
+//                    }
                     
                 }.listRowInsets(EdgeInsets())
                 
