@@ -16,7 +16,7 @@ struct ProductRow: View {
             Text(self.categoryName).font(.headline)
                 .padding(.leading,15)
                 .padding(.top,5)
-            ScrollView{
+            ScrollView(.horizontal, showsIndicators: false){
                 HStack(alignment: .center, spacing: 0){
                     ForEach(self.items) { item in
                         ProductItem(object: item)
@@ -32,8 +32,10 @@ struct ProductRow: View {
 }
 
 
+//#if BEBUG
 struct ProductRow_Previews: PreviewProvider {
     static var previews: some View {
         ProductRow(categoryName: materialResponse[0].category.rawValue, items: Array(materialResponse.prefix(3)))
     }
 }
+//#endif

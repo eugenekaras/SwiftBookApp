@@ -20,6 +20,7 @@
 		E9468BCD2932B751007D68A5 /* coursesModelData.json in Resources */ = {isa = PBXBuildFile; fileRef = E9468BCC2932B751007D68A5 /* coursesModelData.json */; };
 		E9468BCF29340C2E007D68A5 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9468BCE29340C2E007D68A5 /* ProductRow.swift */; };
 		E9468BD129341154007D68A5 /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9468BD029341154007D68A5 /* ProductItem.swift */; };
+		E9468BD32936867E007D68A5 /* FriendsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9468BD22936867E007D68A5 /* FriendsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		E9468BCC2932B751007D68A5 /* coursesModelData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coursesModelData.json; sourceTree = "<group>"; };
 		E9468BCE29340C2E007D68A5 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		E9468BD029341154007D68A5 /* ProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
+		E9468BD22936867E007D68A5 /* FriendsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				E9468BBE29321DED007D68A5 /* Cell.swift */,
+				E9468BD22936867E007D68A5 /* FriendsList.swift */,
 				E903F329292FE6F5002EC14C /* TopView.swift */,
 			);
 			path = FriendsList;
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9468BC32932202B007D68A5 /* UserResponse.swift in Sources */,
+				E9468BD32936867E007D68A5 /* FriendsList.swift in Sources */,
 				E9468BC529322038007D68A5 /* Data.swift in Sources */,
 				E9468BCB2932B514007D68A5 /* ProductsResponse.swift in Sources */,
 				E9468BD129341154007D68A5 /* ProductItem.swift in Sources */,

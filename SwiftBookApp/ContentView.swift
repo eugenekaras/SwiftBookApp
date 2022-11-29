@@ -25,9 +25,15 @@ struct ContentView: View {
 
                     ProductRow(categoryName: key, items: self.categories[key]!)
                     
+                }.listRowInsets(EdgeInsets())
+                
+                NavigationLink(destination: FriendsList()){
+                    Text("Наши преподователи")
                 }
                 
-            }.listRowInsets(EdgeInsets())
+                
+                
+            }
                 .navigationBarTitle(Text("Homepage"))
         }
     }
